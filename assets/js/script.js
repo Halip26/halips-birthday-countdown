@@ -1,4 +1,4 @@
-// variable for month lists
+// Variable for month lists
 const months = [
   "January",
   "February",
@@ -14,7 +14,7 @@ const months = [
   "December",
 ];
 
-// variable for day lists
+// Variable for day lists
 const weekdays = [
   "Sunday",
   "Monday",
@@ -25,6 +25,7 @@ const weekdays = [
   "Saturday",
 ];
 
+// HTML DOM Document Selector Method
 const theBirthday = document.querySelector(".birthdayOn");
 const timeLeft = document.querySelector(".timeleft");
 const formatTime = document.querySelectorAll(".format h4");
@@ -45,12 +46,12 @@ month = months[month];
 const weekday = weekdays[futureBirthday.getDay()];
 const date = futureBirthday.getDate();
 
-// manipulate the text of .birthdayOn
+// Manipulate the text of .birthdayOn
 theBirthday.textContent = `Birthday on ${weekday}, ${month} ${date}, ${year} at ${hours}:${minutes} am`;
 
 const futureTime = futureBirthday.getTime();
 
-// this function for get remainding time
+// This function for get reminding time
 function getRemindingTime() {
   const today = new Date().getTime();
   const t = futureTime - today;
@@ -59,7 +60,7 @@ function getRemindingTime() {
   const oneHour = 60 * 60 * 1000;
   const oneMinute = 60 * 1000;
 
-  // calcualte all values
+  // Calcualte all values
   let days = t / oneDay;
   days = Math.floor(days);
   let hours = Math.floor((t % oneDay) / oneHour);
@@ -68,6 +69,8 @@ function getRemindingTime() {
 
   // Set array values
   const values = [days, hours, minutes, seconds];
+
+  // Manipulate every format element
   function format(item) {
     if (item < 10) {
       return (item = `0${item}`);
@@ -85,8 +88,8 @@ function getRemindingTime() {
   }
 }
 
-// countdown
+// Countdown based on interval
 let countdown = setInterval(getRemindingTime, 1000);
 
-// set initial values
+// Countdown based on interval
 getRemindingTime();
