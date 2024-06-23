@@ -91,7 +91,7 @@ function getRemindingTime() {
 // Countdown based on interval
 let countdown = setInterval(getRemindingTime, 1000);
 
-// Countdown based on interval
+// Call the main function
 getRemindingTime();
 
 // Get the current year
