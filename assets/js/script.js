@@ -84,7 +84,7 @@ function getRemindingTime() {
 
   if (t < 0) {
     clearInterval(countdown);
-    timeLeft.innerHTML = `<h4 class="expired">Sorry, This birthday has expired!</h4>`;
+    timeLeft.innerHTML = `<h4 class="expired">Sorry, this birthday date has passed!</h4>`;
   }
 }
 
@@ -93,3 +93,9 @@ let countdown = setInterval(getRemindingTime, 1000);
 
 // Countdown based on interval
 getRemindingTime();
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Set the current year to the span with id "currnetYear"
+document.getElementById("currentYear").textContent = currentYear;

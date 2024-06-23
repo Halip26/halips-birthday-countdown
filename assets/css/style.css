@@ -53,11 +53,8 @@ body {
   box-shadow: 0 0 30px #e6b51459;
 }
 
-.card h1 {
-  font-size: 30px;
-}
-
 .text h1 {
+  font-size: 30px;
   letter-spacing: 1.6px;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
@@ -95,7 +92,11 @@ h4 {
 }
 
 /* this selector to manipulate the js code */
-/* masih kosong dulu yaah, nanti ajah wkwk*/
+.timeleft .expired {
+  font-size: 1.5rem;
+  color: #ff0033;
+  text-transform: none;
+}
 
 .format {
   place-items: center;
@@ -142,12 +143,21 @@ h4 {
 
 .card-footer h1 {
   font-size: 18px;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 2;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-footer p {
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 /* responsive for iPhone 12 pro */
 @media only screen and (max-width: 390px) {
   .section-center {
-    margin-bottom: 340px;
+    margin-bottom: 18rem;
   }
 
   .card h1 {
@@ -157,6 +167,10 @@ h4 {
 
   .card-footer h1 {
     font-size: 15px;
+  }
+
+  .card-footer p {
+    font-size: 12px;
   }
 
   .text h1 {
@@ -187,7 +201,7 @@ h4 {
 /* responsive for iPhone 14 Pro Max */
 @media only screen and (max-width: 430px) {
   .section-center {
-    margin-bottom: 370px;
+    margin-bottom: 18rem;
   }
 
   .format {
