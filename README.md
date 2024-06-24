@@ -36,7 +36,7 @@ This project is a simple yet charming countdown timer designed by [me](https://h
 **Project Structure:**
 
 ```md
-countdown-to-aqilah-birthday/
+countdown-to-halip-birthday/
 ├── index.html  # Main HTML file
 ├── style.css   # CSS styles for layout and appearance
 ├── script.js   # JavaScript file for countdown logic
