@@ -35,6 +35,7 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
+// Set the date of my birthday
 const futureBirthday = new Date(2025, 0, 26, 10, 30, 0);
 
 const year = futureBirthday.getFullYear();
