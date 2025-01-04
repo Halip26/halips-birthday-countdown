@@ -20,10 +20,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
 .section-center {
   width: 90vw;
   margin: 5rem auto;
@@ -96,6 +92,22 @@ h4 {
   font-size: 1.5rem;
   color: #ff0033;
   text-transform: none;
+}
+
+.timeleft a {
+  text-decoration: none;
+  transform: translateX(-50%);
+  color: white;
+  background: crimson;
+  padding: 1px 4px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.timeleft a:hover {
+  color: crimson;
+  background: none;
 }
 
 .format {
@@ -175,6 +187,11 @@ h4 {
 
   .text h1 {
     font-size: 23px;
+  }
+
+  .timeleft .expired {
+    font-size: 16px;
+    margin: 0 2px 0px 2px;
   }
 
   .text h4 {
