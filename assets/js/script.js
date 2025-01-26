@@ -36,7 +36,7 @@ let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
 // Set the date of my birthday
-const futureBirthday = new Date(2025, 0, 26, 23, 59, 0);
+const futureBirthday = new Date(2024, 0, 26, 23, 59, 0);
 
 const year = futureBirthday.getFullYear();
 const hours = futureBirthday.getHours();
@@ -59,7 +59,7 @@ theBirthday.textContent = `Birthday on ${weekday}, ${month} ${date}, ${year} at 
 
 const futureTime = futureBirthday.getTime();
 
-// This function for get reminding time
+// This function to get reminding time
 function getRemindingTime() {
   const today = new Date().getTime();
   const t = futureTime - today;
@@ -92,7 +92,7 @@ function getRemindingTime() {
 
   if (t < 0) {
     clearInterval(countdown);
-    timeLeft.innerHTML = `<h4 class="expired">Sorry, this birthday date has passed! <br /> But, You can try to click the button below 👇 <br /> <a href="https://halip26.github.io/projects/">Birthday wishes </a> </h4>`;
+    timeLeft.innerHTML = `<h4 class="expired">Sorry, this birthday date has passed! <br /> But, you can send me a message by clicking the button below 👇 <br/> <a href="https://halip26.github.io/#contact">Birthday wishes </a> </h4>`;
   }
 }
 
