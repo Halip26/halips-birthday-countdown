@@ -167,13 +167,21 @@ h4 {
 }
 
 /* responsive for iPhone 12 pro */
-@media only screen and (max-width: 390px) {
-  .section-center {
-    margin-bottom: 18rem;
+@media only screen and (max-width: 394px) {
+  body {
+    background-size: cover;
+  }
+
+  .card {
+    margin-top: 90%;
   }
 
   .card-footer {
-    margin-top: -5%;
+    margin-top: -55%;
+  }
+
+  .section-center {
+    margin-bottom: 18rem;
   }
 
   .card h1 {
